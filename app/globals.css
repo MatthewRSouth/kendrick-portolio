@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Near-monochrome gallery palette: warm canvas, deep ink, hairlines, and a
+   single muted umber accent. The artwork supplies all the real color.
+   No dark mode — the warm canvas is the gallery wall. */
+@theme {
+    --color-canvas: #faf8f4;
+    --color-ink: #1c1b19;
+    --color-ink-muted: #6f6a61;
+    --color-line: #e7e2d9;
+    --color-accent: #8c6a4a;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+    --font-display: var(--font-display), Georgia, serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.7;
+}
+
+::selection {
+    background-color: var(--color-line);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
 }
