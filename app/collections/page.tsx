@@ -25,9 +25,12 @@ export default function CollectionsPage() {
                     </p>
                 ) : (
                     <ul className="grid grid-cols-1 gap-x-8 gap-y-14 pt-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-10 lg:gap-y-16">
-                        {collections.map((collection) => (
+                        {collections.map((collection, index) => (
                             <li key={collection.slug}>
-                                <CollectionCard collection={collection} />
+                                <CollectionCard
+                                    collection={collection}
+                                    priority={index === 0}
+                                />
                             </li>
                         ))}
                     </ul>

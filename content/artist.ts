@@ -6,12 +6,12 @@ import type { ArtistProfile } from "@/lib/types";
 export const artist: ArtistProfile = {
     name: "Kendrick", // [PLACEHOLDER] display name
     photo: {
-        src: "/artist/portrait.jpg",
-        alt: "Portrait of the artist (placeholder image)",
-        width: 1200,
-        height: 1500,
+        src: "/artist/kendrick.jpg",
+        alt: "Kendrick seated on a bed in an open striped shirt and jeans, looking away toward a window in a bright, quiet room.",
+        width: 1450,
+        height: 964,
         blurDataURL:
-            "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAPAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAF/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAECAxESISL/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A00loBJLJKzgE7vQCf//Z",
+            "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAT/xAAbEAABBQEBAAAAAAAAAAAAAAABAAIDESETBP/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAWEQEBAQAAAAAAAAAAAAAAAAAAESH/2gAMAwEAAhEDEQA/AKGRMAaNwWQBd4o/TFF1vpGLF65ETMFf/9k=",
     },
     bio: [
         "[PLACEHOLDER] First sentence of the artist's bio — who he is and where he works.",
